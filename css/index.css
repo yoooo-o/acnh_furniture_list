@@ -1,0 +1,143 @@
+/*reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*reset end*/
+div {
+  box-sizing: border-box;
+}
+
+.page {
+  background-color: #f8f3dd;
+  background-repeat: no-repeat;
+  width: 1364px;
+  display: flex;
+  padding-bottom: 50px;
+}
+.page.page01 {
+  background-image: url(../img/list01.jpg);
+}
+.page.page02 {
+  background-image: url(../img/list02.jpg);
+}
+.page.page03 {
+  background-image: url(../img/list03.jpg);
+}
+.page.page04 {
+  background-image: url(../img/list04.jpg);
+}
+.page.page04 .left .itemBox {
+  padding-top: 11.75%;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 682px;
+}
+.wrapper.left {
+  padding-top: 2%;
+  padding-left: 4.8%;
+  width: 47.5%;
+}
+.wrapper.right {
+  padding-top: 2%;
+  padding-left: 6%;
+  width: 48.8%;
+}
+.wrapper .itemBox {
+  width: 12.4%;
+  padding-top: 11.7%;
+  position: relative;
+  box-sizing: border-box;
+  margin-bottom: 0.4%;
+}
+.wrapper .itemBox label {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1;
+}
+.wrapper .itemBox label[for$=_h] {
+  top: 0;
+  padding-top: 50%;
+  z-index: 9999;
+}
+.wrapper .itemBox label[for$=_c] {
+  bottom: 0;
+  padding-top: 100%;
+}
+.wrapper .itemBox label input[type=checkbox] {
+  margin: 0;
+  display: none;
+}
+.wrapper .itemBox label input[id$=_h]:checked + .have {
+  background-color: rgba(255, 0, 255, 0.3);
+}
+.wrapper .itemBox label input[id$=_c]:checked + .catalog {
+  background-color: rgba(0, 148, 0, 0.3);
+}
+.wrapper .itemBox .catalog, .wrapper .itemBox .have {
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 100%;
+  z-index: -1;
+}
+.wrapper .itemBox .have {
+  top: 0;
+  padding-top: 50%;
+}
+.wrapper .itemBox .catalog {
+  bottom: 0;
+  padding-top: 94.4444%;
+}
+/*# sourceMappingURL=index.css.map */
